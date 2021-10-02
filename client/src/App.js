@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import { Room, Star } from "@material-ui/icons";
+import "./app.scss";
 
 const App = () => {
   const [viewport, setViewport] = useState({
@@ -39,17 +40,17 @@ const App = () => {
             <label>Place</label>
             <h4 className="place">Eiffell Tower</h4>
             <label>Review</label>
-            <p>Beautiful place. I like it.</p>
+            <p className="desc">Beautiful place. I like it.</p>
             <label>Rating</label>
             <div className="stars">
-              <Star />
-              <Star />
-              <Star />
-              <Star />
-              <Star />
+              <Star className="star" />
+              <Star className="star" />
+              <Star className="star" />
+              <Star className="star" />
+              <Star className="star" />
             </div>
             <label>Information</label>
-            <span className="username">Created by <b>DannyS</b> </span>
+            <span className="username">Created by <b>DannyS</b></span>
             <span className="date">1 hour ago</span>
           </div>
         </Popup>
