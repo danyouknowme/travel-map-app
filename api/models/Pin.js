@@ -9,7 +9,7 @@ const PinSchema = new mongoose.Schema(
     lat: { type: Number, required: true },
     long: { type: Number, required: true },
   },
-  { timestamp: true }
+  { timestamps: true }
 );
 
 module.exports = mongoose.model("Pin", PinSchema);
